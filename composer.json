@@ -1,0 +1,29 @@
+{
+    "name": "bobdenotter/my-awesome-extension",
+    "description": "Put a nice and succinct description of your extension here.",
+    "type": "bolt-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "YourNameHere",
+            "email": "youremail@acme.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+        "twig/twig": "^2.12 | ^3.0"
+    },
+    "require-dev": {
+        "bolt/core": "^4.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BobDenOtter\\MyAwesomeExtension\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "entrypoint": "BobDenOtter\\MyAwesomeExtension\\Extension"
+    }
+}
